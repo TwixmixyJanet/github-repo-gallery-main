@@ -95,8 +95,6 @@ viewReposButton.addEventListener("click", function () {
   viewReposButton.classList.add("hide");
 });
 
-console.log(viewReposButton);
-
 // // Dynamic search
 filterInput.addEventListener("input", function (e) {
   const searchText = e.target.value;
