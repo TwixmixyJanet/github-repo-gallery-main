@@ -4,8 +4,8 @@ const username = "TwixmixyJanet";
 const repoList = document.querySelector(".repo-list");
 const allReposContainer = document.querySelector(".repos");
 const repoData = document.querySelector(".repo-data");
-const viewReposButton = document.querySelector(".view-repos hide");
-const filterInput = document.querySelector(".filter-repos hide");
+const viewReposButton = document.querySelector(".view-repos");
+const filterInput = document.querySelector(".filter-repos");
 
 const gitUserInfo = async function () {
   const userInfo = await fetch(`https://api.github.com/users/${username}`);
@@ -94,6 +94,8 @@ viewReposButton.addEventListener("click", function () {
   repoData.classList.add("hide");
   viewReposButton.classList.add("hide");
 });
+
+console.log(viewReposButton);
 
 // // Dynamic search
 filterInput.addEventListener("input", function (e) {
